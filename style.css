@@ -44,4 +44,20 @@ main{
 .fa-regular{
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+.errorOff{
+    display: none;
+}
+.errorOn{
+    color: red;
+}
+/*Mark text as done by adding lin through on the text*/
+.markAsDone{
+    text-decoration: line-through;
+}
+/*prevent text highlight on list when double click, curser is pointer on hover*/
+.listItem p{
+    user-select: none;
+    cursor: pointer;
 }
