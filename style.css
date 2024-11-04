@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    place-content: center;
+    background-color: plum;
+}
+main{
+    display: grid;
+    max-width: fit-content;
+    background-color: white;
+    padding: 10px 100px;
+}
+.header{
+    text-align: center;
+    /* background-color: red; */
+}
+.header h1{
+    margin: 0px;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.input{
+    min-width: 250px;
+    min-height: 30px;
+}
+.addBtn{
+    font-size: x-large;
+    padding: 0px 15px 0px 15px;
+}
+.listItem{
+    display: flex;
+    justify-content: center;
+    font-family:sans-serif;
+    font-size: x-large;
+    gap: 20px
+}
+.foter ul{
+    list-style-type: none;
+    padding: 0px;
+}
+/*Button style*/
+.fa-regular{
+    background-color: transparent;
+    border: none;
+}
