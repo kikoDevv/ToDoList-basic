@@ -8,18 +8,25 @@ main{
     max-width: fit-content;
     background-color: white;
     padding: 10px 100px;
+    animation: dropDown 0.9s ease-in;
 }
 .header{
     text-align: center;
-    /* background-color: red; */
 }
 .header h1{
     margin: 0px;
+    animation: faideIn 2s ease-in;
+}
+.header p{
+    animation: faideIn 2s ease-in;
+    animation-delay: 0.2s;
 }
 .header div{
     display: flex;
     justify-content: center;
     gap: 10px;
+    animation: faideIn 2s ease-in;
+    animation-delay: 0.2s;
 }
 .input{
     min-width: 250px;
@@ -60,4 +67,53 @@ main{
 .listItem p{
     user-select: none;
     cursor: pointer;
+}
+
+/* 
+
+Animatinon and effect
+
+*/
+
+/*animation for added list*/
+.listItem{
+    /*animation name and duration*/
+    animation: slideUp 0.2s;
+}
+@keyframes slideUp {
+    /*+20px from its original position with 0 opatacity to its original ps*/
+    0%{
+        transform: translateY(+20px);
+        opacity: 0;
+    }
+}
+/*Animation for the hole menue at the start*/
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Transition for the text to eas in litle bite after the menue droped down*/
+@keyframes faideIn {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

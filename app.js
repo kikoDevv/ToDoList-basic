@@ -11,7 +11,7 @@ addBtn.addEventListener("click", ()=>{
         //create new list with input from user.
         createList();
         //call the function to clear the input.
-        clearInput();
+        // clearInput();
     } else {
         //calling the error function with a condition to be on.
         errorPromp("On");
