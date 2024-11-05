@@ -2,6 +2,7 @@ const input = document.querySelector(".input");
 const addBtn = document.querySelector(".addBtn");
 const errorText = document.querySelector(".errorOff");
 const listHolder = document.querySelector(".listHolder");
+const counter = document.querySelector(".counter");
 // listen to addBtn for any click.
 addBtn.addEventListener("click", ()=>{
     //if the input is empty call the errorPromp to be on. else call the create list functon.
@@ -18,7 +19,6 @@ addBtn.addEventListener("click", ()=>{
         // console.log("input is empty!");
     }
 });
-
 
 
 
@@ -44,6 +44,7 @@ function createList(){
     //mark is done in the list.
     text.addEventListener("click", ()=>{
         text.classList.toggle("markAsDone");
+        counter.textContent = document.querySelectorAll(".markAsDone").length;
     });
 
 };
