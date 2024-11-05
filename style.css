@@ -43,7 +43,7 @@ main{
     justify-content: center;
     font-family:sans-serif;
     font-size: x-large;
-    gap: 20px
+    gap: 20px;
 }
 .listItem p:hover{
     text-decoration: line-through;
@@ -63,7 +63,7 @@ main{
 }
 .errorOn{
     color: red;
-    animation: blinc 1s 4;
+    animation: blinc 0.5s 5;
 }
 /*Mark text as done by adding lin through on the text*/
 .markAsDone{
